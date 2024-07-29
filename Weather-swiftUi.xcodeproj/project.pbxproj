@@ -11,6 +11,10 @@
 		927CFFBF2C57C06200FC98E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFBE2C57C06200FC98E5 /* ContentView.swift */; };
 		927CFFC12C57C06300FC98E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927CFFC02C57C06300FC98E5 /* Assets.xcassets */; };
 		927CFFC42C57C06300FC98E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927CFFC32C57C06300FC98E5 /* Preview Assets.xcassets */; };
+		927CFFCC2C57C28100FC98E5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFCB2C57C28100FC98E5 /* Location.swift */; };
+		927CFFCE2C57C2EF00FC98E5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFCD2C57C2EF00FC98E5 /* Weather.swift */; };
+		927CFFD12C57C52500FC98E5 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFD02C57C52500FC98E5 /* ApiEndPoint.swift */; };
+		927CFFD42C57C62400FC98E5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFD32C57C62400FC98E5 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		927CFFBE2C57C06200FC98E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		927CFFC02C57C06300FC98E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		927CFFC32C57C06300FC98E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		927CFFCB2C57C28100FC98E5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		927CFFCD2C57C2EF00FC98E5 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		927CFFD02C57C52500FC98E5 /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		927CFFD32C57C62400FC98E5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		927CFFBB2C57C06200FC98E5 /* Weather-swiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				927CFFD22C57C60D00FC98E5 /* Utility */,
+				927CFFCF2C57C4FE00FC98E5 /* Clients */,
+				927CFFCA2C57C26000FC98E5 /* Models */,
 				927CFFBC2C57C06200FC98E5 /* Weather_swiftUiApp.swift */,
 				927CFFBE2C57C06200FC98E5 /* ContentView.swift */,
 				927CFFC02C57C06300FC98E5 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				927CFFC32C57C06300FC98E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		927CFFCA2C57C26000FC98E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				927CFFCB2C57C28100FC98E5 /* Location.swift */,
+				927CFFCD2C57C2EF00FC98E5 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		927CFFCF2C57C4FE00FC98E5 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				927CFFD02C57C52500FC98E5 /* ApiEndPoint.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		927CFFD22C57C60D00FC98E5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				927CFFD32C57C62400FC98E5 /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927CFFD12C57C52500FC98E5 /* ApiEndPoint.swift in Sources */,
+				927CFFCE2C57C2EF00FC98E5 /* Weather.swift in Sources */,
 				927CFFBF2C57C06200FC98E5 /* ContentView.swift in Sources */,
+				927CFFCC2C57C28100FC98E5 /* Location.swift in Sources */,
 				927CFFBD2C57C06200FC98E5 /* Weather_swiftUiApp.swift in Sources */,
+				927CFFD42C57C62400FC98E5 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
