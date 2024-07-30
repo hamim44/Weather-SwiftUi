@@ -14,14 +14,16 @@ enum NewworkError: Error {
 
 
 struct GeoCodingLocation {
-    func coodenateByCity(_ city: String) async throws -> Location {
-        let (data, response) = try await URLSession.shared.data(from: ApiEndPoint.endpointsURl(for: .coordinantByGrographyclName(city)))
+    func callTheCityName(cityname: String) async throws ->Location {
+        
+        let (data,response) = try await URLSession.shared.data(from: ApiEndPoint.endpointsURl(for: .coordinantByGrographyclName("\(cityname)")))
+        
         guard let response = response as? HTTPURLResponse,
               response.statusCode == 200 else {
             throw NewworkError.invalidresponse
         }
         
-        let locations = try! JSONDecoder().decode([Location].self, from: data)
-        return locations.first!
+        let location = try! JSONDecoder().decode([Location].self, from: data)
+        return location.first!
     }
 }
