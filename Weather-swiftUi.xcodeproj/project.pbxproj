@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		926650112C58B44C00931542 /* GeoCodingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926650102C58B44C00931542 /* GeoCodingLocation.swift */; };
+		926650132C58BB7500931542 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926650122C58BB7500931542 /* WeatherClient.swift */; };
 		927CFFBD2C57C06200FC98E5 /* Weather_swiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFBC2C57C06200FC98E5 /* Weather_swiftUiApp.swift */; };
 		927CFFBF2C57C06200FC98E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CFFBE2C57C06200FC98E5 /* ContentView.swift */; };
 		927CFFC12C57C06300FC98E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927CFFC02C57C06300FC98E5 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		926650102C58B44C00931542 /* GeoCodingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodingLocation.swift; sourceTree = "<group>"; };
+		926650122C58BB7500931542 /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 		927CFFB92C57C06200FC98E5 /* Weather-swiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-swiftUi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927CFFBC2C57C06200FC98E5 /* Weather_swiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_swiftUiApp.swift; sourceTree = "<group>"; };
 		927CFFBE2C57C06200FC98E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				927CFFD02C57C52500FC98E5 /* ApiEndPoint.swift */,
+				926650102C58B44C00931542 /* GeoCodingLocation.swift */,
+				926650122C58BB7500931542 /* WeatherClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -174,9 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				927CFFD12C57C52500FC98E5 /* ApiEndPoint.swift in Sources */,
+				926650112C58B44C00931542 /* GeoCodingLocation.swift in Sources */,
 				927CFFCE2C57C2EF00FC98E5 /* Weather.swift in Sources */,
 				927CFFBF2C57C06200FC98E5 /* ContentView.swift in Sources */,
 				927CFFCC2C57C28100FC98E5 /* Location.swift in Sources */,
+				926650132C58BB7500931542 /* WeatherClient.swift in Sources */,
 				927CFFBD2C57C06200FC98E5 /* Weather_swiftUiApp.swift in Sources */,
 				927CFFD42C57C62400FC98E5 /* Constant.swift in Sources */,
 			);

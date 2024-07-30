@@ -19,7 +19,7 @@ enum ApiEndPoint {
         case .coordinantByGrographyclName(let city):
             return "/geo/1.0/direct?q=\(city)&appid=\(Constant.keys.weatherAPIkey)"
         case .weatherByLatLon(let lat, let lon):
-             return "/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(Constant.keys.weatherAPIkey)"
+             return "/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(Constant.keys.weatherAPIkey)&units=metric"
         }
     }
     
